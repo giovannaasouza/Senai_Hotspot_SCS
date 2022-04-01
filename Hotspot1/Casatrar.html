@@ -19,7 +19,7 @@
 
 -->
 
-    $(if chap-id)
+   
     <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
@@ -37,7 +37,7 @@
         }
 
     </script>
-    $(endif)
+    
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap animated fadeIn">
@@ -50,12 +50,7 @@
                         <path d="M42.91,1.4c.1,0,.11,0,.12.11A16.55,16.55,0,0,0,48.26,13a16.6,16.6,0,0,0,12,4.66c-10,4-20.55-5.6-17.33-16.28" fill="#fff" fill-rule="evenodd" /></svg>
 
 
-                    <p class="info $(if error)alert$(endif)">
-                        $(if error == "")Please log in to use the internet hotspot service $(if trial == 'yes')<br />Free trial available, <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)
-                        $(endif)
-
-                        $(if error)$(error)$(endif)
-                    </p>
+                    
                     <label>
                         <img class="ico" src="img/user.svg" alt="#" />
                         <input name="username" type="text" value="$(username)" placeholder="Username" />
