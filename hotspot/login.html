@@ -6,28 +6,28 @@
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="expires" content="-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internet hotspot - Log in</title>
+    <title>Internet hotspot - Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-     two other colors
+   
 
 <body class="lite">
 <body class="dark">
 
 <header>
-    <div>
-        <img class="header" src="img/Degrade.png" alt="$"; 
+    <div class="header_login">
+
     </div>
 </header>
 
-    $(if chap-id)
+    
     <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
         <input type="hidden" name="CPF" />
         <input type="hidden" name="Senha" />
-        <input type="hidden" name="dst" value="$(link-orig)" />
+        
         <input type="hidden" name="popup" value="true" />
     </form>
 
@@ -41,7 +41,7 @@
         }
 
     </script>
-    $(endif)
+ 
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap animated fadeIn">
@@ -52,19 +52,22 @@
 
 
                     <p class="info $(if error)alert$(endif)">
-                        Olá bem vindo <br /> </a>
+                        Olá bem vindo (a) <br /> </a>
                     </p>
                     <label>
-                        <img class="ico" src="" alt="#" />
-                        <input name="CPF" type="text" value="CPF" placeholder="CPF" />
+                      
+                        <input class="input_Login" name="CPF" type="text" value="CPF" placeholder="CPF" />
                     </label>
 
                     <label>
                         <img class="ico" src="img/password.svg" alt="#" /> 
-                        <input name="Senha" type="Senha" placeholder="Senha" />
+                        <input name="password" type="password" placeholder="Senha" />
                     </label>
 
                     <input type="submit" value="login" />
+
+                    <p class="info $(if error)alert$(endif)">
+                        Você ainda não é cadastrado? <br /> </a>
 
                 </form>
                 <p class="info bt"></p>
