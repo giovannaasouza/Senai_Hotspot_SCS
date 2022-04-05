@@ -16,6 +16,19 @@ body {
 a{
     color:#486173
 }
+.cabecalho{
+    justify-content: center;
+    display: flex;
+    height: 153px;
+    background-image: url(../img/Degrade.png.lnk);
+
+}
+.logoSenai{
+    margin-top: 4vh;
+    height: 80px;
+    width: 225px;
+}
+
 input,label{
     vertical-align:middle;
     white-space:normal;
@@ -35,7 +48,7 @@ p::first-letter{
     clip-path: polygon(0 0, 100% 0, 100% 30%, 84% 33%, 69% 34%, 53% 32%, 40% 28%, 27% 26%, 13% 27%, 0 28%);
 }
 .main{
-    min-height:calc(100vh - 90px);
+   
     width:100%;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -123,7 +136,7 @@ form{
 .info{
     color:#fff;
     text-align:center;
-    margin-bottom:30px
+    margin-bottom:50px
 }
 input{
     outline:0;
@@ -161,19 +174,23 @@ input[type=password]:focus,input[type=text]:focus{
     opacity:.4
 }
 input[type=submit]{
-    background:#3e4d59;
-    color:#fff;
+    background : #fff;
+    color:#681413;
     border:0;
     cursor:pointer;
+    border:1px solid  rgb(168 163 163 / 80%);
     text-align:center;
     width:100%;
     height:44px;
+    margin-bottom: 20px;
+    border-radius: 42px;
     /* border-radius:6px;
     -webkit-transition:background .3s ease-in-out;
     transition:background .3s ease-in-out */
 }
-input[type=submit]:focus,input[type=submit]:hover{
-    background:#33404a
+input[type=submit]:focus,
+input[type=submit]:hover{
+    background: #e30613;
 }
 table{
     border-collapse:collapse;
