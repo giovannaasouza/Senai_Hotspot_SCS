@@ -20,7 +20,7 @@ a{
     justify-content: center;
     display: flex;
     height: 153px;
-    background-image: url(../img/Degrade.png.lnk);
+    background-image: url(../img/Degrade.png);
 
 }
 .logoSenai{
@@ -187,6 +187,18 @@ input[type=submit]{
     /* border-radius:6px;
     -webkit-transition:background .3s ease-in-out;
     transition:background .3s ease-in-out */
+}
+
+.SemCadastro{
+    display: flex;
+    margin-left:65px ;
+}
+.text1 {
+   
+}
+  
+.text2 {
+    text-decoration: none;
 }
 input[type=submit]:focus,
 input[type=submit]:hover{

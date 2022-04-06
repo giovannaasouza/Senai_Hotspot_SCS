@@ -11,70 +11,96 @@
 </head>
 
 <body>
-
-   
-
-<body class="lite">
-<body class="dark">
-
-<header class="cabecalho">
-    <div >
-        <img class="logoSenai"  src="img/Logo_SENAI_BRANCO NEGATIVO.png" alt="">
-    </div>
-</header>
-
-    
     <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
-        <input type="hidden" name="CPF" />
-        <input type="hidden" name="Senha" />
-        
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
         <input type="hidden" name="popup" value="true" />
     </form>
 
     <script src="/md5.js"></script>
     <script>
         function doLogin() {
-            document.sendin.cpf.value = document.login.cpf.value;
-            document.sendin.senha.value = hexMD5('$(chap-id)' + document.login.senha.value + '$(chap-challenge)');
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
             document.sendin.submit();
             return false;
         }
 
     </script>
- 
-    <div class="ie-fixMinHeight">
-        <div class="main">
-            <div class="wrap animated fadeIn">
-                <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
-                    <input type="hidden" name="dst" value="$(link-orig)" />
-                    <input type="hidden" name="popup" value="true" />
+
+    <body class="lite">
+
+        <body class="dark">
+
+            <header class="cabecalho">
+                <div>
+                    <img class="logoSenai" src="img/Logo_SENAI_BRANCO_NEGATIVO.png" alt="">
+                </div>
+            </header>
 
 
-                    <p class="info $(if error)alert$(endif)">
-                        Olá bem vindo (a) <br /> </a>
-                        <br /> 
-                    </p>
-                    <label>
-                        <img class="ico" src="img/user.svg" alt="#" /> 
-                        <input class="input_Login" name="CPF" type="text" value="CPF" placeholder="CPF" />
-                    </label>
+            <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+                <input type="hidden" name="CPF" value="true" />
+                <input type="hidden" name="Senha" value="true" />
+                <input type="hidden" name="popup" value="true" />
 
-                    <label>
-                        <img class="ico" src="img/password.svg" alt="#" /> 
-                        <input name="password" type="password" placeholder="Senha" />
-                    </label>
+            </form>
 
-                    <input type="submit" value="login" />
+            <script src="/md5.js"></script>
+            <script>
+                function doLogin() {
+                    document.sendin.cpf.value = document.login.cpf.value;
+                    document.sendin.senha.value = hexMD5('$(chap-id)' + document.login.senha.value + '$(chap-challenge)');
+                    document.sendin.submit();
+                    return false;
+                }
 
-                    <p class="info ">
-                        Você ainda não é cadastrado? <br /> </a>
+            </script>
 
-                </form>
-                <p class="info bt"></p>
+            <div class="ie-fixMinHeight">
+                <div class="main">
+                    <div class="wrap animated fadeIn">
+                        <form name="login" action="$(link-login-only)" method="post" $(if chap-id)
+                            onSubmit="return doLogin()" $(endif)>
+                            <input type="hidden" name="dst" value="$(link-orig)" />
+                            <input type="hidden" name="popup" value="true" />
 
+
+                            <p class="info $(if error)alert$(endif)">
+                                Olá bem vindo (a) <br /> </a>
+                                <br />
+                            </p>
+                            <label>
+                                <img class="ico" src="img/user.svg" alt="#" />
+                                <input class="input_Login" name="CPF" type="text" placeholder="CPF" />
+                            </label>
+
+                            <label>
+                                <img class="ico" src="img/password.svg" alt="#" />
+                                <input name="password" type="password" placeholder="Senha" />
+                            </label>
+
+                            <input type="submit" value="Login" />
+
+                            <div class="SemCadastro">
+
+                                <span class="text1">
+                                    Você ainda não é
+
+                                    <a href="#" class="text2">
+                                        cadastrado?
+                                    </a>
+                                </span>
+                            </div>
+
+
+                        </form>
+                        <p class="info bt"></p>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</body>
+        </body>
 
 </html>
