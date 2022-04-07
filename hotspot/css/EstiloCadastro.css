@@ -1,54 +1,57 @@
-a,body,div,form,html,img,input,label,p,span {
+a,body,div,form,html,img,input,label,p,span{
     margin:0;
     padding:0;
     border:0;
-    font-family:sans-serif,Arial 
+    font-family:sans-serif,Arial
 }
-body,html{
+ body,html{
     min-height:100%;
     overflow-x:hidden
 }
-body {
+ body{
     background:#a2a09b;
     background:-webkit-linear-gradient(315deg,hsla(236.6,0%,53.52%,1) 0,hsla(236.6,0%,53.52%,0) 70%),-webkit-linear-gradient(65deg,hsla(220.75,34.93%,26.52%,1) 10%,hsla(220.75,34.93%,26.52%,0) 80%),-webkit-linear-gradient(135deg,hsla(46.42,36.62%,83.92%,1) 15%,hsla(46.42,36.62%,83.92%,0) 80%),-webkit-linear-gradient(205deg,hsla(191.32,50.68%,56.45%,1) 100%,hsla(191.32,50.68%,56.45%,0) 70%);
-    background:linear-gradient(135deg,hsla(236.6,0%,53.52%,1) 0,hsla(236.6,0%,53.52%,0) 70%),linear-gradient(25deg,hsla(220.75,34.93%,26.52%,1) 10%,hsla(220.75,34.93%,26.52%,0) 80%),linear-gradient(315deg,hsla(46.42,36.62%,83.92%,1) 15%,hsla(46.42,36.62%,83.92%,0) 80%),linear-gradient(245deg,hsla(191.32,50.68%,56.45%,1) 100%,hsla(191.32,50.68%,56.45%,0) 70%)
+     background:linear-gradient(135deg,hsla(236.6,0%,53.52%,1) 0,hsla(236.6,0%,53.52%,0) 70%),linear-gradient(25deg,hsla(220.75,34.93%,26.52%,1) 10%,hsla(220.75,34.93%,26.52%,0) 80%),linear-gradient(315deg,hsla(46.42,36.62%,83.92%,1) 15%,hsla(46.42,36.62%,83.92%,0) 80%),linear-gradient(245deg,hsla(191.32,50.68%,56.45%,1) 100%,hsla(191.32,50.68%,56.45%,0) 70%)
 }
 a{
     color:#486173
 }
-.cabecalho{
+
+.cabecario{
     justify-content: center;
     display: flex;
     height: 153px;
-    background-image: url(../img/Degrade.png);
+    /* background-color: brown; */
+   background-image: url(../img/Degrade.png);
 
 }
+
 .logoSenai{
     margin-top: 4vh;
     height: 80px;
     width: 225px;
 }
 
-input,label{
+
+h1{
+    margin-right: 13vw;
+}
+
+ input,label{
     vertical-align:middle;
     white-space:normal;
-    background:0 0;
+     background:0 0;
     line-height:1
 }
-label{
+ label{
     position:relative;
     display:block
 }
-p::first-letter{
-    text-transform:uppercase 
+ p::first-letter{
+    text-transform:uppercase
 }
-
-
-.header{
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 84% 33%, 69% 34%, 53% 32%, 40% 28%, 27% 26%, 13% 27%, 0 28%);
-}
-.main{
-   
+ .main{
+    
     width:100%;
     display:-webkit-box;
     display:-ms-flexbox;
@@ -56,54 +59,55 @@ p::first-letter{
     -webkit-box-orient:vertical;
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
-    flex-direction:column 
+    flex-direction:column
 }
-.ie-fixMinHeight{
+ .ie-fixMinHeight{
     display:-webkit-box;
     display:-ms-flexbox;
-    display:flex 
+    display:flex
 }
-.ico{
+ .ico{
     height:16px;
     position:absolute;
     top:0;
     left:0;
     margin-top:13px;
-    margin-left:14px 
+    margin-left:14px
 }
-.logo{
+ .logo{
     max-width:200px;
     display:block;
     margin:0 auto 30px auto
 }
-.logo *{
+ .logo *{
     fill:#fff
 }
 .lite .logo *{
     fill:#444
 }
-h1{
+ h1{
     text-align:center;
     color:#fff;
     font-size:24px!important
 }
-*{
+ *{
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
     font-size:16px
 }
-.wrap{
+ .wrap{
     margin:auto;
     padding:40px;
     -webkit-transition:width .3s ease-in-out;
     transition:width .3s ease-in-out
 }
-@media only screen and (min-width:1px) and (max-width:575px){
+ @media only screen and (min-width:1px) and (max-width:575px){
     .wrap{
+        
         width:100%
     }
 }
-form{
+ form{
     width:100%;
     margin-bottom:20px
 }
@@ -123,86 +127,78 @@ form{
         opacity:1
     }
 }
-.fadeIn{
+ .fadeIn{
     -webkit-animation-name:fadeIn;
     animation-name:fadeIn
 }
-.animated{
+ .animated{
     -webkit-animation-duration:1s;
     animation-duration:1s;
     -webkit-animation-fill-mode:both;
     animation-fill-mode:both
 }
-.info{
-    color:#fff;
-    text-align:center;
-    margin-bottom:50px
-}
-input{
+ input{
     outline:0;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none
 }
-input:focus{
+ input:focus{
     outline:0
 }
- input[type=password],input[type=text]{
+input [type= number], input[type= number]{
     width:100%;
     border:1px solid  rgba(255,255,255,.8);
-    height:44px;
-    padding:3px 20px 3px 40px;
-    margin-bottom:20px;
-    border-radius:6px;
-    background-color:rgba(255,255,255,.8);
-} 
-input[type=password],input[type=text]{
-    width:100%;
-    border:1px solid  rgba(255,255,255,.8);
-    height:44px;
-    padding:3px 20px 3px 40px;
-    margin-bottom:20px;
-    border-radius:42px;
-    background-color:rgba(255,255,255,.8);
+    height: 44px;;
+    padding: 3px 20px 3px 40px;
+    margin-bottom: 20px;
+    border-radius: 42px;
+    background-color: #fff;
+    border: 1px solid #c3c3c3;
     
-} 
-input[type=password]:focus,input[type=text]:focus{
+
+}
+input[type=email], input[type=email]{
+    width:100%;
+    border:1px solid  rgba(255,255,255,.8);
+    height: 44px;;
+    padding: 3px 20px 3px 40px;
+    margin-bottom: 20px;
+    border-radius: 42px;
+    background-color:#fff;
+    border: 1px solid #c3c3c3;
+}  
+
+ input[type=password], input[type=text]{
+    width:100%;
+    border:1px solid  rgba(255,255,255,.8);
+    height: 44px;;
+    padding: 3px 20px 3px 40px;
+    margin-bottom: 20px;
+    border-radius: 42px;
+    background-color:#fff;
+ }
+
+ input[type=password]:focus, input[type=text]:focus{
     -webkit-box-shadow:0 0 5px 0 rgba(255,255,255,1);
     box-shadow:0 0 5px 0 rgba(255,255,255,1)
 }
-.bt{
+ .bt{
     opacity:.4
 }
 input[type=submit]{
-    background : #fff;
-    color:#681413;
+    background:#e30613;
+    color:#fff;
     border:0;
     cursor:pointer;
-    border:1px solid  rgb(168 163 163 / 80%);
     text-align:center;
     width:100%;
     height:44px;
-    margin-bottom: 20px;
-    border-radius: 42px;
-    /* border-radius:6px;
-    -webkit-transition:background .3s ease-in-out;
-    transition:background .3s ease-in-out */
+    border-radius:42px;
+    -webkit-transition:.3s ease-in-out;
+    transition:.3s ease-in-out
 }
-
-.SemCadastro{
-    display: flex;
-    margin-left:65px ;
-}
-.text1 {
-   
-}
-  
-.text2 {
-    text-decoration: none;
-    color: #681413;
-}
-input[type=submit]:focus,
-input[type=submit]:hover{
+ input[type=submit]:focus,input[type=submit]:hover{
     background: #e30613;
 }
 table{
@@ -215,72 +211,48 @@ table td{
     border-bottom:1px solid #e6e6e6;
     padding:10px 4px 10px 0
 }
-table td:first-child{
+ table td:first-child{
     font-weight:700
 }
-.lite{
+ .lite{
     background:#fff
 }
-.lite input[type=password],.lite input[type=text]{
+ .lite input[type=password], .lite input[type=text]{
     border:1px solid #c3c3c3
 }
-.lite .info,.lite h1,.lite table td{
+ .lite .info,.lite h1,.lite table td{
     color:#444
 }
-.lite input[type=password]:focus,.lite input[type=text]:focus{
+ .lite input[type=password]:focus,.lite input[type=text]:focus{
     -webkit-box-shadow:0 0 5px 0 rgba(62,77,89,.2);
     box-shadow:0 0 5px 0 rgba(62,77,89,.2)
 }
-.dark{
-    background:#343434
+ .dark{
+    background:#e30613;
 }
 .dark input[type=submit]{
     background:#dc3a41
 }
-.dark input[type=submit]:focus,.dark input[type=submit]:hover{
+ .dark input[type=submit]:focus,.dark input[type=submit]:hover{
     background:#b92f35
 }
-.dark input[type=password],.dark input[type=text]{
+ .dark input[type=password], .dark input[type=text]{
     background-color:#fff
 }
-.dark a{
+ .dark a{
     color:#dc3a41
 }
-.dark table td{
-    border-bottom:1px solid #505050 
+ .dark table td{
+    border-bottom:1px solid #505050
 }
-.info.alert{
+ .info.alert{
     color:#da3d41
 }
-@media (min-width:576px) {
+@media (min-width:576px){
     .wrap{
         width:410px
     }
-    * {
+    *{
         font-size:14px!important
     }
-}
- 
-
-.header
-{
-    left: 200;
-    height: 150;
-    display: contents;
-    /* padding: */
-}
-.ie-fixMinHeight
-{
-    left: 140;
-    height: 20;
-}
-.ico
-{
-    display:grid ;
-}
-
-.input_Login{
-    width: 2g00px;
-    height: 30px;
-    border-radius: 6px;
 }
