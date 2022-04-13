@@ -5,7 +5,7 @@
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="-1">
 <title>Internet hotspot - Log out</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/logout.css">
 <script>
     function openLogin() {
 	if (window.name != 'hotspot_logout') return true;
@@ -17,28 +17,39 @@
 </head>
 
 <body>
+    <header>
+        
+          
+                <img src="img/Logo_SENAI_BRANCO_NEGATIVO.png" alt="">
+                
+            
+       
+    </header>
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap">
-                <h1>Hi pedro!</h1> 
+                <h1>You have just logged out!</h1> 
                 <table>  
-                   
+                    <tr><td>Username</td><td>$(username)</td></tr>
                     <tr><td>IP address</td><td>$(ip)</td></tr>
-                    <tr><td>Bytes up / down</td>2.2 KIB / 5,5 KIB<td></td></tr>
-                    
-                    <tr><td>Connected</td><td>$0s</td></tr>
+                    <tr><td>MAC address</td><td>$(mac)</td></tr>
+                    <tr><td>Session time</td><td>$(uptime)</td></tr>
                     $(if session-time-left)
-                    <tr><td>Status refresh</td><td>$(session-time-left)</td></tr>
+                    <tr><td>Time left</td><td>$(session-time-left)</td></tr>
                     $(endif)
-                    
+                    <tr><td>Bytes up / down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+                </table>
 
 
                 <form action="$(link-login)" name="login" onSubmit="return openLogin()">
-                <input type="submit" value="Log in">
+                <input type="submit" value="Desconectar ">
                 </form>
             </div>
         </div>
     </div>
+    <footer> 
+        <h1>@ Senai todos os direitos reservados</h1>
+       </footer>
 
 </body>
 </html>
