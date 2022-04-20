@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+    <form name="sendin" action="$(link-login-only)" method="post" >
         <input type="hidden" name="username" />
         <input type="hidden" name="password" />
         <input type="hidden" name="dst" value="$(link-orig)" />
@@ -26,7 +26,7 @@
             document.sendin.submit();
             return false;
         }
-
+    // -->
     </script>
 
     <body class="lite">
@@ -39,10 +39,15 @@
                 </div>
             </header>
 
-
-            <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
-                <input type="hidden" name="CPF" value="true" />
-                <input type="hidden" name="Senha" value="true" />
+            <!-- <form class="vertical-form" name="login" action="$(link-login-only)" method="post" background="#A03472"
+            $(if chap-id) onSubmit="return doLogin()" $(endif)>
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" /> -->
+          
+            <form name="sendin" action="$(link-login-only)" method="post"
+                $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                <input type="hidden" name="dst" value="true" />
+                <input type="hidden" name="dst" value="true" />
                 <input type="hidden" name="popup" value="true" />
 
             </form>
@@ -73,15 +78,15 @@
                             </p>
                             <label>
                                 <img class="ico" src="img/user.svg" alt="#" />
-                                <input class="input_Login" name="CPF" type="text" placeholder="CPF" />
+                                <input class="input_Login" name="username" value="$(username)" type="text" placeholder="CPF" />
                             </label>
 
                             <label>
                                 <img class="ico" src="img/password.svg" alt="#" />
-                                <input name="password" type="password" placeholder="Senha" />
+                                <input name="password" type="password" label="false" placeholder="Senha" />
                             </label>
 
-                            <input type="submit" value="Login" />
+                            <input type="submit" value="Conectar"/>
 
                             <div class="SemCadastro">
 
