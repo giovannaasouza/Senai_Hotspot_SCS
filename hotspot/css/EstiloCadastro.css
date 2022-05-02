@@ -109,7 +109,7 @@ h1{
 }
  form{
     width:100%;
-    margin-bottom:20px
+    height: 365px;
 }
 @-webkit-keyframes fadeIn{
     from{
@@ -186,6 +186,11 @@ input[type=email], input[type=email]{
  .bt{
     opacity:.4
 }
+
+/* .TermosDeUso{
+    padding: 5px;
+} */
+
 input[type=submit]{
     background:#e30613;
     color:#fff;
@@ -196,10 +201,21 @@ input[type=submit]{
     height:44px;
     border-radius:42px;
     -webkit-transition:.3s ease-in-out;
-    transition:.3s ease-in-out
+    transition:.3s ease-in-out;
+    margin-top: 20px;
 }
  input[type=submit]:focus,input[type=submit]:hover{
     background: #e30613;
+}
+
+input[type="checkbox" ] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
 }
 table{
     border-collapse:collapse;
@@ -253,6 +269,6 @@ table td{
         width:410px
     }
     *{
-        font-size:14px!important
+        font-size:15px!important
     }
 }
